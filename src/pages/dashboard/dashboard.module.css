@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+ }
+ 
+ .dashboardContainer {
+     display: flex;
+     height: 900px;
+     font-family: "Arima", system-ui;
+     font-optical-sizing: auto;
+ 
+ }
+ 
+ .sidebar {
+     width: 250px;
+     background-color: #d46911;
+     color: #fff;
+     padding: 20px;
+     box-shadow: 2px 0 5px rgba(206, 101, 15, 0.1);
+ }
+ 
+ .sidebarTitle {
+     font-size: 24px; 
+     margin-bottom: 20px;
+     display: block;
+     font-weight: bold; 
+     text-align: center; 
+     border-bottom: 2px solid #deebeb; 
+     padding-bottom: 10px; 
+ }
+ 
+ .sidebarMenu {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .sidebarMenu li {
+     margin-bottom: 20px;
+     cursor: pointer;
+     font-size: 16px;
+     color: #fff; 
+     text-decoration: none;
+     display: flex; 
+     align-items: center;
+     gap: 10px; 
+ }
+ 
+ .sidebarMenu li:hover {
+     color: #ddd;
+ }
+ 
+ .icon1 {
+     font-size: 20px; 
+ }
+ 
+ .sidebarMenu a {
+     text-decoration: none;
+     color: inherit;
+     display: block;
+ }
+ 
+ .sidebarMenu a:hover {
+     text-decoration: none; 
+ }
+ 
+ .icon {    
+     width: 150px; 
+     height: 75px;  
+ }
+ 
+ .mainContent {
+     flex: 1;
+     padding: 20px;
+     background-color: #f4f4f4;
+ }
+ 
+ .header {
+     display: flex;
+     justify-content: space-between; 
+     align-items: center; 
+     margin-bottom: 20px;
+ }
+ 
+ .header button {
+     margin-right: 400px; 
+     background-color: #d46911;
+     color: white;
+     border: none;
+     padding: 15px 18px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;   
+     font-size: 16px;
+     border-radius: 8px;
+ } 
+ .header button :hover{
+    background-color: #fff;
+ }
+ 
+ .dashboardCards {
+     display: flex;
+     gap: 20px;
+     margin-bottom: 20px; 
+     
+ }
+ 
+ .additionalCards {
+     display: flex;
+     gap: 20px;
+     width: 30px;
+ }
+ 
+ .card {
+     flex: 1;
+     background-color: #fff;
+     padding: 30px; 
+     border-radius: 10px; 
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+     font-size: 18px; 
+     transition: transform 0.2s; 
+ }
+ 
+ .card h3 {
+     margin-top: 0;
+     font-size: 20px;
+     margin-bottom: 35px;
+ }
+ 
+ .card:hover {
+     transform: scale(1.05); 
+ }
+ 
+ .card p {
+     margin-bottom: 0;
+     font-size: 16px; 
+ }
+ 
+ 
+ .newsSection {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 21%;
+    height: 861px;
+    padding: 21px;
+    background-color:#d46911;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.newsSection h3 {
+    font-family: "Arima", sans-serif; 
+    font-size: 24px; 
+    color: #ffffff; 
+    margin-bottom: 25px; 
+    text-align: center; 
+}
+
+
+.buttonLink {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    padding: 15px 48px;
+    font-size: 19px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.buttonLink:hover {
+    background-color: #d46911; 
+}
+
+ .activities {
+     margin-top: 20px;
+ }
+ 
+ .activityHeader {
+     display: flex;
+     background-color: #d46911;;
+     color: #fff;
+     padding: 10px;
+     border-radius: 8px;
+     font-size: 14px;
+ }
+ 
+ .activityColumn, .dateColumn {
+     flex: 1;
+     width: 480px;
+     font-weight: bold;
+ }
+ 
+ .activityRow {
+     display: flex;
+     padding: 10px;
+     border-bottom: 1px solid #ddd;
+ }
+ 
+ .activityItem, .dateItem {
+     flex: 1;
+ }
+ 
+ @media screen and (max-width: 759px) {
+     .dashboardContainer {
+         flex-direction: column; 
+         height: auto; 
+ 
+     }
+ 
+     .sidebar {
+         width: 100%; 
+         padding: 10px;
+         text-align: center;
+         box-shadow: none; 
+     }
+ 
+     .sidebarMenu {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+     }
+ 
+     .sidebarMenu li {
+         margin-bottom: 15px; 
+         cursor: pointer;
+         font-size: 16px;
+         padding: 10px;
+         border-radius: 4px; 
+         transition: background-color 0.3s ease, color 0.3s ease;
+     }
+ 
+     .sidebarMenu li:hover {
+         background-color: #db580c; 
+         color: #fff; 
+     }
+ 
+     .sidebarMenu a {
+         text-decoration: none;
+         color: inherit;
+         display: block;
+     }
+ 
+     .mainContent {
+         width: 100%; 
+         padding: 10px;
+     }
+   
+     .dashboardCards,
+     .additionalCards {
+         flex-direction: column; 
+         gap: 10px;
+     }
+ 
+     .card {
+         width: 100%; 
+         padding: 15px; 
+     }
+ 
+     .header {
+         display: flex;                  
+         justify-content: space-between; 
+         align-items: center;            
+         margin-bottom: 20px;          
+     }
+     
+     .header .icon {
+         margin-left: 0;    
+         width: 108px;          
+         height: 59px;
+     }
+     
+     .header button {
+         margin-right: 5px;            
+         text-align: center;            
+         width: 102px;
+         height: 45px;  
+                       
+     }
+     
+ }

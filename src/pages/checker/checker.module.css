@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+
+
+*{
+    margin: 0;
+ }
+ 
+ .dashboardContainer {
+     display: flex;
+     height: 900px;
+     font-family: "Arima", system-ui;
+     font-optical-sizing: auto;
+ 
+ }
+ 
+ .sidebar {
+     width: 220px;
+     background-color: #d46911;
+     color: #fff;
+     box-shadow: 2px 0 5px rgba(206, 101, 15, 0.1);
+     padding: 20px;
+ }
+ 
+ .sidebarTitle {
+     font-size: 24px; 
+     margin-bottom: 20px;
+     display: block;
+     font-weight: bold; 
+     text-align: center;
+     border-bottom: 2px solid #deebeb; 
+     padding-bottom: 10px; 
+ }
+ 
+ .sidebarMenu {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .sidebarMenu li {
+     margin-bottom: 20px;
+     cursor: pointer;
+     font-size: 16px;
+     color: #fff; 
+     text-decoration: none;
+     display: flex; 
+     align-items: center;
+     gap: 10px; 
+ }
+ 
+ .sidebarMenu li:hover {
+     color: #ddd;
+ }
+
+.icon1 {
+    font-size: 20px;
+}
+
+.sidebarMenu a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.sidebarMenu a:hover {
+    text-decoration: none;
+}
+
+.icon {    
+    width: 150px;
+    height: 75px;
+}
+
+
+.mainarea{
+    
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px; 
+        width: '70%';
+        height: '50%';
+}
+
+.horizontalContainer {
+    display: flex;
+    gap: 42px; 
+    align-items: flex-start; 
+}
+
+/* Main content */
+.checkerContent {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #000000;
+    margin-right: 23px;
+}
+
+.uploadCard, .propertiesCard {
+    background: white;
+    padding: 36px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 156%;
+    margin-bottom: 30px;
+    border: solid 2px rgb(153, 148, 148);
+
+}
+.uploadCard h3{
+    text-align: center;
+}
+
+
+.uploadOptions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+    gap: 19px;
+}
+
+.hiddenInput {
+    display: none;
+}
+
+.uploadButton, .actionButton {
+    padding: 4px 12px;
+    background-color: #e58e5c;
+    color: rgb(30, 20, 20);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.uploadButton:hover, .actionButton:hover {
+    background-color: #acbfcb;
+}
+
+.textAreaContainer,
+.urlInputContainer {
+    margin-top: 20px;
+}
+
+.textArea,
+.inputField {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    
+}
+
+
+.dragArea {
+    padding: 40px;
+    border: 2px dashed #bdc3c7;
+    text-align: center;
+    color: #7f8c8d;
+    cursor: pointer;
+}
+
+.dragArea:hover {
+    border-color: #b5d0e1;
+}
+
+.inputField, .selectField, .textArea {
+    width: 100%;
+    padding: 3px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.saveContainer ,.buttonContainer{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+.saveButton , .checkButton {
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    padding: 10px 28px;
+    background-color: #eda94a;
+    color: rgb(37, 29, 29);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    gap: 10px;
+    margin-top: -5px; 
+}
+
+.saveButton:hover {
+    background-color: #e0cbac;
+}
+
+
+
+.checkButton:hover {
+    background-color: #e0cbac;
+}
+
+.plagiarismResultCard{
+    padding: 0px 20px;
+    background-color: #f1c27b; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(240, 129, 55);
+    border-radius: 19px;
+}  
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2px;
+  }
+  
+  .resultCard {
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    border: solid 2px rgb(153, 148, 148);
+    width: 490px;
+    height: 300px;
+    max-width: 700px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .resultTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f0732a;
+  }
+  
+  .resultDetails p {
+    font-size: 18px;
+    color: #444;
+    margin: 8px 0;
+  }
+  
+  .chartContainer {
+    width: 490px;
+    height: 247px;
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: solid 2px rgb(153, 148, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  
+  .chartContainer h4 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: -9px;
+    color: #f0732a;
+  }
+  
+  canvas {
+    width: 50% !important;
+    height: auto !important;
+      
+}
+  
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+    }
+
+    .checkerContent {
+        padding: 20px;
+    }
+
+    .uploadCard, .propertiesCard {
+        width: 85%;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px ) {
+    .dashboardContainer {
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sidebarMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap:41px;
+    }
+
+    .checkerContent {
+        padding: 10px;
+        width: 100%;
+        flex-grow: 0;
+    }
+
+    .horizontalContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px; 
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+
+    .uploadCard, .propertiesCard {
+        display: flex;           
+       justify-content: center; 
+       align-items: center;     
+       flex-direction: column;  
+       height: 100%;   
+       margin-right: -128px;
+       margin-top: 27px;
+       
+    }
+    .hiddenInput{
+        width: 45px;
+    }
+
+    .uploadOptions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 190px;
+    }
+
+    .uploadButton, .actionButton {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 15px;
+        margin-right: -167px;
+    }
+
+   .textArea {
+        width: 225px !important;
+        height: 116px !important;
+        padding: 3px;
+        margin: 10px 0;
+        border: 1px solid #bdc3c7;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .inputField{
+        width: 214px;
+        height: 28px;
+
+    }
+
+    .selectField{
+        width: 214px;
+        height: 28px;
+
+    }
+    .saveButton {
+        width:134px;
+        height: 68px;
+        margin-right: 72px;
+        margin-top: 16px;
+    }
+    .checkButton{
+        width: 61%;
+        height: 124%;
+        margin-right: 1px;
+        margin-top: -16px;
+    }
+}

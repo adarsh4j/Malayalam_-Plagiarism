@@ -1,0 +1,188 @@
+/* Container for the entire dashboard layout */
+.dashboardContainer {
+    display: flex;
+    min-height: 100vh; /* Full-height for the viewport */
+    background-color: #f4f7f9; /* Light background */
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #2c3e50;
+    width: 250px;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Sidebar title */
+.sidebarTitle {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* Sidebar links */
+.sidebarMenu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebarMenu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebarMenu li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+    width: 100%; /* Full width for sidebar items */
+}
+
+.sidebarMenu li:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.icon1 {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+/* Main content styling */
+.mainContent {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f7f9;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+.icon {
+    width: 90px; /* Adjust logo size */
+}
+
+/* Button styling for logout */
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Dashboard Cards styling using Flexbox */
+.dashboardCards {
+    display: flex;
+    flex-wrap: wrap; /* Ensure cards wrap to the next line if the width is too small */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px;
+    width: 100%; /* Full width */
+    justify-content: flex-start; /* Align cards to the left */
+}
+
+/* Individual card styling */
+.card {
+    flex: 1 1 250px; /* Flexible size with a minimum width of 250px */
+    max-width: 100%; /* Prevent overflow */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Card header styling */
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.card p {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.cardIcon {
+    font-size: 2rem;
+    color: #2980b9;
+}
+.card:hover {
+    background-color: #d7dbde;
+}
+
+
+
+/* Additional cards styling */
+.additionalCards {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card1 {
+    width: 1290px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+/* Activity section styling */
+.activities {
+    margin-top: 10px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.activityHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.activityColumn, .dateColumn {
+    font-size: 1rem;
+    color: #34495e;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .dashboardCards {
+        flex-direction: column; /* Stack cards on smaller screens */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+}
