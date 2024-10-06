@@ -22,7 +22,7 @@ Make sure you have the following installed:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://gitlab.com/icfoss2680036/malayalam_plagiarism.git
+git clone https://github.com/adarsh4j/Malayalam_-plagiarism.git
 cd Malayalam_-plagiarism
 npm install
 
